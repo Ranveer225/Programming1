@@ -23,7 +23,7 @@ int main() {
             if (!memory[i]) memory[i] = processId, count++;
 
         int totalUsed = pagesRequired * PAGE_SIZE, unused = totalUsed - processSize;
-        cout << "Process " << processId << " to " << nextAddr << ", Size: " << processSize << "MB, Available: " << unused << "MB\n";
+        cout << "Process " << processId << " to " << nextAddr << ", Size: " << processSize << "MB, Unused: " << unused << "MB\n";
         nextAddr += totalUsed;
         processId++;
     }
